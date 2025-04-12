@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Francisco José Salamanca-Rivera">
+
+<title>quarto-input3c682fdff52dea56</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="OLINK_KIEL_files/libs/clipboard/clipboard.min.js"></script>
+<script src="OLINK_KIEL_files/libs/quarto-html/quarto.js"></script>
+<script src="OLINK_KIEL_files/libs/quarto-html/popper.min.js"></script>
+<script src="OLINK_KIEL_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="OLINK_KIEL_files/libs/quarto-html/anchor.min.js"></script>
+<link href="OLINK_KIEL_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="OLINK_KIEL_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="OLINK_KIEL_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="OLINK_KIEL_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="OLINK_KIEL_files/libs/bootstrap/bootstrap-c0367b04c37547644fece4185067e4a7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="OLINK_KIEL_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="OLINK_KIEL_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+</head><body class="fullcontent">\usepackage{authblk}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% Configuración del encabezado
+\pagestyle{fancy}
+\fancyhf{} % Limpia encabezado y pie de página
+\lhead{\includegraphics[height=1cm]{/Users/fjosesala/Documents/IKMB/PROJECTS/OLINK_KIEL/Imagenes/Unal_ikmb.png}}
+\rhead{Francisco José Salamanca-Rivera}
+
+% Conteo de páginas en el pie de página
+\cfoot{\thepage\ de \pageref{LastPage}} % "Página X"
+
+% Información del autor y afiliaciones
+\author{Francisco José Salamanca-Rivera}
+\affil{Facultad de Ciencias, Departamento de Biología, Universidad Nacional de Colombia, Bogotá, Colombia}
+\affil{Institute of Clinical Molecular Biology, Kiel University, University Hospital Schleswig-Holstein, Kiel, Germany}
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+
+
+
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><p><strong>Integración Proteo-genómica para la detección de biomarcadores inflamatorios y sus reguladores genéticos en la Enfermedad Inflamatoria Intestinal mediante Olink proteomics</strong></p></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Francisco José Salamanca-Rivera </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="resumen" class="level2">
+<h2 class="anchored" data-anchor-id="resumen">Resumen</h2>
+<p><strong>Introducción:</strong> La enfermedad inflamatoria intestinal (EII) es una enfermedad crónica y heterogénea, lo que dificulta el pronóstico y las opciones de tratamiento. Aunque se ha identificado más de 200 loci genómicos asociados con la susceptibilidad, no se ha estudiado exhaustivamente la variabilidad en la expresión de las proteínas circulantes.</p>
+<p><strong>Objetivo:</strong> Caracterizar los perfiles proteómicos de pacientes con EII utilizando Olink Proteomics® e integrar estos datos con información genómica.</p>
+<p><strong>Métodos:</strong> En un estudio de casos y controles, se analizaran 73 proteínas plasmáticas relacionadas con la inflamación en 154 pacientes con EII y 369 individuos sanos. La combinación de proteomica y mapeo genético permitirá identificar pQTL y comprender mejor la relación entre la genética y la expresión de proteínas en la EII.<br>
+<strong>Resultados:</strong> (all the proteins)+top proteins+pQTLs<br>
+<strong>Conclusión:</strong>&nbsp;</p>
+<p><strong>Palabras clave:</strong> Enfermedad Inflamatoria Intestinal; Enfermedad de Crohn; Colitis Ulcerativa; pQTLs; &nbsp; Loci; Locus; Desequilibrio de Ligamiento; SNP</p>
+</section>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción"><strong>1. Introducci</strong>ón</h2>
+<p>La enfermedad inflamatoria intestinal (EII), que incluye la enfermedad de Crohn (EC) y la colitis ulcerativa (CU), es un trastorno crónico y recurrente, caracterizado por una prevalencia global creciente y una marcada heterogeneidad clínica. La diversidad de manifestaciones de la enfermedad, acompañada por la progresión y la respuesta terapéutica complica el pronóstico, la selección del tratamiento y el monitoreo a largo plazo, resaltando la necesidad urgente de personalizar los acercamientos en el manejo de los pacientes (Colombel et al., 2017).</p>
+<p>Si bien los avances en la investigación genómica han identificado más de 200 loci de riesgo asociados con la susceptibilidad a la EII, estos hallazgos explican solo una fracción de la variabilidad de la enfermedad, lo que deja brechas críticas en la comprensión de los mecanismos funcionales y los objetivos terapéuticos elaborables (de Lange et al., 2017; Liu et al., 2015).</p>
+<p>Cada vez hay más pruebas de que las proteínas circulantes son mediadores dinámicos de las vías de la enfermedad, lo que ofrece una perspectiva de la fisiopatología de la EII que la genómica por sí sola no puede captar. A diferencia de las variantes genéticas, las proteínas reflejan procesos biológicos en tiempo real, como interacciones con desencadenantes ambientales, desregulación inmunitaria y daño tisular. A pesar de los amplios perfiles proteómicos en poblaciones sanas, los análisis sistemáticos en la EII siguen siendo escasos, lo que limita la traducción de los descubrimientos proteomics en herramientas clínicas para el diagnóstico, la monitorización de la enfermedad o la terapia dirigida (Sun et al., 2018; Zhernakova et al., 2018). Además, la integración de datos proteómicos con variantes de riesgo genético (llamados enfoques proteogenómicos) es prometedora para dilucidar los mecanismos subyacentes a los loci conocidos, identificar nuevos biomarcadores y acelerar el desarrollo de fármacos (Bourgonje et al., 2019; Folkersen et al., 2020).</p>
+<p>Este estudio aborda esas lagunas a través de un doble enfoque, la definición de proteómica plasmática de la EII utilizando ensayos de extensión de proximidad de alto rendimiento (PEA) con Olink Proteomics® y la identificación de determinantes genéticos de los niveles de expresión de proteínas (loci de rasgo cuantitativo de proteínas, pQTLs) dentro de una cohorte de la EII.</p>
+<p>Empleando un diseño de casos y controles (154 pacientes con EII frente a 369 controles sanos emparejados), analizamos 73 proteínas relacionadas con el panel inflamatorio predefinido de Olink, junto con la genotipificación de todo el genoma a través del Global Screening Array (GSA; ~700.000) de Ilumina. Para mitigar los factores de confusion, el modelo incorpora componentes geneticos, sexo y cohortes.</p>
+<p>Teniendo en cuenta lo expuesto, este trabajo pretende desentrañar los subtipos moleculares de EII, priorizar dianas terapéuticas y avanzar en estrategias de medicina de precisión. Por último, este marco proteogenómico pretende transformar la gestión de la EII vinculando la predisposición genética a biomarcadores proteicos que sean procesables, ofreciendo así una hoja de ruta para la estratificación de los pacientes y las intervenciones personalizadas.</p>
+</section>
+<section id="materiales-y-métodos" class="level2">
+<h2 class="anchored" data-anchor-id="materiales-y-métodos"><strong>2. Materiales y métod</strong>o<strong>s</strong></h2>
+<section id="método-de-muestreo" class="level3">
+<h3 class="anchored" data-anchor-id="método-de-muestreo"><strong>2.1. Método de muestreo:</strong></h3>
+<p>Se reclutaron participantes provenientes de dos cohortes distintas. La cohorte EMGE compuesta por 193 controles sanos y la cohorte KINDRED con un total de 230 individuos, de los cuales 154 presentaban la enfermedad inflamatoria intestinal (IBD), subdividiendose en 76 casos de Colitis Ulcerativa (UC), 78 de enfermedad de Crohn (CD), junto con 76 controles sanos. En total, se conformó una muestra de 423 individuos, todos ellos provenientes del hospital Universitario de Schleswig-Holstein ubicado en Kiel, Alemania. Las muestras fueron recolectadas mediante extracción sanguínea, siendo el suero el tipo de muestra utilizado para el análisis. El reclutamiento de los sujetos del estudio fue aprobado por el comité ético y las juntas de revisión institucional de todos los participantes individuales. Se obtuvo el consentimiento informado por escrito de todos los participantes en el estudio.</p>
+<p>El estudio empleó un muestreo por conveniencia. El reclutamiento de participantes comenzó en octubre del 2013, y continúa en curso. Hasta abril de 2021, la cohorte incluyó 1497 pacientes diagnosticados con&nbsp; IBD, junto con 1813 familiares de primer y segundo grado los cuales inicialmente estaban asintomáticos, todos residentes de Alemania. Se estableció un criterio de inclusión con edad mínima de 7 años. Los participantes proporcionaron datos mediante cuestionarios estandarizados y muestras biológicas (sangre, heces y cabello). Se implementó un protocolo de seguimiento bienal, durante el cual se recolectaron sistemáticamente nuevos datos clínicos y biomateriales para futuros análisis longitudinales (Rausch et al., 2024).</p>
+</section>
+<section id="análisis-de-datos-proteómicos" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-de-datos-proteómicos"><strong>2.2. Análisis de datos Proteómicos:</strong> &nbsp;</h3>
+<p>El análisis proteómico se realizó a partir del suero sanguíneo de 440 individuos, utilizando el panel Olink Inflammation, el cual incluye la detección de 92 proteínas estrechamente relacionadas con procesos inflamatorios. El análisis fue llevado a cabo por el equipo de Olink Proteomics en el laboratorio de servicio analitico en Uppsala, Suecia. (Olink Target 96 — Olink®, s. f.).</p>
+<p>Los NPX calculados por el software de Olink® fueron los usados para los análisis posteriores (Información Suplementaria 1).</p>
+</section>
+<section id="análisis-de-datos-genómicos" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-de-datos-genómicos"><strong>2.3. Análisis de datos Genómicos:</strong></h3>
+<p>La extracción y purificación del ADN se realizó a partir de las muestras de sangre de los 440 individuos provenientes de las dos cohortes estudiadas. Para ello, se extrajo la sangre en tubos con EDTA, como anticoagulante. Se aisló el ADN mediante (nombre método), asegurándose que la concentración de ADN resultante fuera mayor 50 ng/µl.</p>
+<p>Luego de haber extraído el ADN, se realizó un proceso desnaturalización con (NAOH) y amplificación mediante PCR, finalmente el ADN amplificado se fragmenta (~300 pb), esto con el fin de obtener hebras sencillas que pudieran hibridarse correctamente con las sondas del microarray a utilizar.</p>
+<p>Una vez el ADN fragmentado y desnaturalizado se realizó la hibridación del ADN sobre el microarray de Illumina Infinium Global Screening Array (GSA) MD 24v1.0, (Ilumina, 2017).</p>
+<p>Los chips se insertaron en el Ilumina iScan System, escaneando la fluorescencia en cada pocillo del chip, generando archivos crudos IDAT con la información de la intensidad de la señal, estos datos IDAT se convirtieron en datos de genotipos (.ped/.map) mediante la plataforma GenomeStudio de Ilumina, utilizando las coordenadas en GRCh37 (hg19) para la asignación de coordenadas genómicas.</p>
+<p>Para garantizar la calidad de los datos fenotípicos del estudio, se aplicaron filtros de control de calidad, siguiendo el pipeline para controles de calidad en estudios de asociación genómica BIGWAS (Kässens et al., 2021) (https://github.com/ikmb/gwas-qc/).</p>
+<section id="imputación" class="level4">
+<h4 class="anchored" data-anchor-id="imputación"><strong>2.3.1. Imputación:</strong></h4>
+<p>Para incrementar el número de SNPs a evaluar, se realizó un proceso de imputación el cual infere variantes genéticas que no fueron directamente genotipadas a través de la comparación con datos o un panel de referencia. La plataforma Trans-Omics for Precision Medicine (TOPMed) del NHLBI, fue usada para imputar utilizando los datos genotipicados post-control de calidad, el panel de referencia usado fue el ofrecido por defecto el cual proviene de&nbsp; más de 150.000 genomas humanos de diversas poblaciones (Taliun et al., 2021).</p>
+</section>
+</section>
+<section id="análisis-exploratorio" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-exploratorio"><strong>2.4. Análisis exploratorio:</strong></h3>
+<p>A través de un análisis descriptivo y gráfico de la distribución de los datos se evaluó la variabilidad, la centralidad y la forma de la distribución de las expresiones de cada proteína para cada cohorte.&nbsp;Los valores atípicos se identificaron mediante el criterio de Tukey.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Graficas para observar la distribucion de </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#los datos crudos segun la cohorte</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear el directorio "plots" si no existe</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(<span class="st">"Plots"</span>)) {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(<span class="st">"Plots"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Generar histograma</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>histograma_rawdata <span class="ot">&lt;-</span> <span class="cf">function</span>(){</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  rawdata_long<span class="ot">&lt;-</span> rawdata_long <span class="sc">%&gt;%</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">cohort_status =</span> dplyr<span class="sc">::</span><span class="fu">recode</span>(cohort_status,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"EMGE_0"</span> <span class="ot">=</span> <span class="st">"Sano EMGE"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">"KNIDRED_0"</span> <span class="ot">=</span> <span class="st">"Sano KINDRED"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>      <span class="st">"KNIDRED_1"</span> <span class="ot">=</span> <span class="st">"Enfermo KINDRED"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  histogram <span class="ot">&lt;-</span> </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggplot</span>(rawdata_long, </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>           <span class="fu">aes</span>(<span class="at">x =</span> value, <span class="at">fill =</span> cohort_status)) <span class="sc">+</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_histogram</span>(<span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>                   <span class="at">bins =</span> <span class="dv">30</span>, <span class="at">alpha =</span> <span class="fl">0.7</span>, </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>                   <span class="at">position =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>protein, <span class="at">scales =</span> <span class="st">'free'</span>) <span class="sc">+</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_grey</span>(<span class="at">start =</span> <span class="fl">0.3</span>, <span class="at">end =</span> <span class="fl">0.8</span>) <span class="sc">+</span>  </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span> <span class="st">"Distribución de valores por proteína según </span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">      su cohorte"</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Valor"</span>,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">"Frecuencia"</span>,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> <span class="st">"Cohorte"</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_classic</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>      <span class="at">legend.position =</span> <span class="st">"top"</span>,</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.text.x =</span> </span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>),</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> </span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">40</span>,<span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>      <span class="at">strip.background =</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>                     <span class="at">fill =</span> <span class="st">"white"</span>, </span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>                     <span class="at">linewidth =</span> <span class="dv">1</span>),  </span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.border =</span> </span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>        <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">linewidth =</span> <span class="dv">1</span>)  </span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="co">#Guardar el gráfico en la carpeta "plots"</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggsave</span>(<span class="st">"Plots/Histograms_rawdata.pdf"</span>, </span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>         histogram, <span class="at">width =</span> <span class="dv">25</span>, <span class="at">height =</span> <span class="dv">25</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(histogram)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="co">#Ver</span></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">histograma_rawdata</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="OLINK_KIEL_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="2880"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Generar boxplots</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>boxplot_rawdata <span class="ot">&lt;-</span> <span class="cf">function</span>(){</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  rawdata_long<span class="ot">&lt;-</span> rawdata_long <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mutate</span>(<span class="at">cohort_status =</span> dplyr<span class="sc">::</span><span class="fu">recode</span>(cohort_status,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>      <span class="st">"EMGE_0"</span> <span class="ot">=</span> <span class="st">"Sano EMGE"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>      <span class="st">"KNIDRED_0"</span> <span class="ot">=</span> <span class="st">"Sano KINDRED"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>      <span class="st">"KNIDRED_1"</span> <span class="ot">=</span> <span class="st">"Enfermo KINDRED"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  boxplot <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(rawdata_long, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                    <span class="fu">aes</span>(<span class="at">x =</span> cohort_status, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                        <span class="at">y =</span> value, <span class="at">fill =</span> cohort_status)) <span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_boxplot</span>(<span class="at">outlier.shape =</span> <span class="dv">16</span>, <span class="at">outlier.size =</span> <span class="dv">2</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>                 <span class="at">alpha =</span> <span class="fl">0.7</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>protein, <span class="at">scales =</span> <span class="st">'free'</span>) <span class="sc">+</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_grey</span>(<span class="at">start =</span> <span class="fl">0.3</span>, <span class="at">end =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">title =</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>        <span class="st">"Distribución de valores por proteína según su cohorte"</span>,</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">x =</span> <span class="st">"Cohorte"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">y =</span> <span class="st">"Valor"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">fill =</span> <span class="st">"Cohorte"</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_classic</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      <span class="at">legend.position =</span> <span class="st">"top"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>),</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="at">plot.title =</span> <span class="fu">element_text</span>(<span class="at">size=</span><span class="dv">40</span>,<span class="at">hjust =</span> <span class="fl">0.5</span>, </span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>                                <span class="at">face =</span> <span class="st">"bold"</span>),</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="at">strip.background =</span> <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>,</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">fill =</span> <span class="st">"white"</span>, </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>                                      <span class="at">linewidth =</span> <span class="dv">1</span>),  </span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="at">panel.border =</span> <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>, </span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">fill =</span> <span class="cn">NA</span>,</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>                                  <span class="at">linewidth =</span> <span class="dv">1</span>)  </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Guardar el gráfico</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggsave</span>(<span class="st">"Plots/Boxplots_rawdata.pdf"</span>, boxplot,</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>         <span class="at">width =</span> <span class="dv">20</span>, <span class="at">height =</span> <span class="dv">30</span>)</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(boxplot)</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot_rawdata</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="OLINK_KIEL_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="2880"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Comprobar Supuestos para Regresion logistica</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausencia de multicolinearidad</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Relación lineal entre las variables continuas y el logit de la respuesta</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Ausencia de valores atípicos e influyentes </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Independencia de las observaciones </span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluación del ajuste del modelo (graph)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="proteínas-asociadas-a-la-condición-de-salud-del-individuo" class="level3">
+<h3 class="anchored" data-anchor-id="proteínas-asociadas-a-la-condición-de-salud-del-individuo"><strong>2.5. Proteínas asociadas a la condición de salud del individuo:</strong></h3>
+<p>Al ser un experimento binomial de casos y controles se escogió un modelo de regresión logística binaria para evaluar la asociación entre la condición de los individuos y la expresión de las proteínas,&nbsp; incluyendo las variables cohorte de procedencia y el género de las personas como variables de confusión (confounder). El modelo logístico se implementó en R utilizando el paquete glm (R Core Team, 2024). Del resultado se extrajeron los valores Z, beta, desviación estándar y p de cada una de las proteínas (Fórmula 6). Para evitar falsos positivos, se controló la tasa de descubrimientos falsos (FDR) mediante el método de Benjamini-Hochberg, considerando significativas a todas aquellas proteínas cuyo valor p ajustado por FDR fuera inferior a 0.05.</p>
+<p><span class="math inline">\(logit(\frac{P(Condicion=1)}{1-P(Condicion=1)})= \beta_0 + \beta_1 \cdot \text{Expresion Proteina} + \beta_2 \cdot Genero + \beta_3 \cdot Cohorte\)</span></p>
+<table class="caption-top table">
+<caption>Formula 6</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Parámetro</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math display">\[
+\beta_0
+\]</span></td>
+<td>Logaritmo del odds (log-odds) de tener la condición cuando todas las variables predictoras son iguales a 0 (valor de referencia).</td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[
+\beta_1
+\]</span></td>
+<td>Cambio de log-odds de la condición por cada una unidad de cambio en la expresión de la proteína.</td>
+</tr>
+<tr class="odd">
+<td><span class="math display">\[
+\beta_2
+\]</span></td>
+<td>Efecto del género en los log-odds de la condición.</td>
+</tr>
+<tr class="even">
+<td><span class="math display">\[
+\beta_3
+\]</span></td>
+<td>Efecto de la cohorte en los log-odds, ajustando por diferencias entre grupos.</td>
+</tr>
+<tr class="odd">
+<td>Condicion</td>
+<td>Variable binaria que indica presencia o ausencia de laenfermedad (EII), o subtipos (Enfermedad de Crohn o Colitis Ulcerativa).</td>
+</tr>
+<tr class="even">
+<td>Expresion proteica</td>
+<td>Media de los valores de NPX de la proteína en distintas placas.</td>
+</tr>
+<tr class="odd">
+<td>Genero</td>
+<td>Variable de ajuste con valores Masculino o Femenino.</td>
+</tr>
+<tr class="even">
+<td>Cohorte</td>
+<td>Procedencia del individuo como factor de ajuste.</td>
+</tr>
+</tbody>
+</table>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir los conjuntos de datos</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>CDvsControl <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"IL7"</span>, <span class="st">"IL.17A"</span>, <span class="st">"CXCL11"</span>, <span class="st">"CXCL9"</span>, <span class="st">"CXCL1"</span>, <span class="st">"CD6"</span>, <span class="st">"TGF.alpha"</span>, <span class="st">"FGF.23"</span>, <span class="st">"PD.L1"</span>, <span class="st">"IL10"</span>, <span class="st">"TNF"</span>, <span class="st">"CCL23"</span>, <span class="st">"DNER"</span>, <span class="st">"FGF.19"</span>, <span class="st">"CSF.1"</span>, <span class="st">"CCL11"</span>, <span class="st">"HGF"</span>, <span class="st">"IFN.gamma"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>IBDvsControl <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"VEGFA"</span>, <span class="st">"IL.17A"</span>, <span class="st">"CXCL11"</span>, <span class="st">"CXCL9"</span>, <span class="st">"CXCL1"</span>, <span class="st">"TGF.alpha"</span>, <span class="st">"FGF.23"</span>, <span class="st">"PD.L1"</span>, <span class="st">"HGF"</span>, <span class="st">"MMP.10"</span>, <span class="st">"IL10"</span>, <span class="st">"TNF"</span>, <span class="st">"DNER"</span>, <span class="st">"FGF.19"</span>, <span class="st">"CCL11"</span>, <span class="st">"IFN.gamma"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>UCvsCD <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"FGF.19"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>UCvsControl <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"IL.17A"</span>, <span class="st">"CXCL11"</span>, <span class="st">"CXCL9"</span>, <span class="st">"CCL11"</span>, <span class="st">"MMP.10"</span>, <span class="st">"IL10"</span>, <span class="st">"CXCL10"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Definir los conjuntos en una lista</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>sets <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">CDvsControl =</span> CDvsControl,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">IBDvsControl =</span> IBDvsControl,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">UCvsCD =</span> UCvsCD,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">UCvsControl =</span> UCvsControl</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Extraer todas las proteínas únicas y ordenarlas alfabéticamente</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>all_proteins <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">unique</span>(<span class="fu">unlist</span>(sets)))</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Crear un data frame con todas las proteínas</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>df_proteins <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Protein =</span> all_proteins)</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Agregar columnas indicando en qué conjunto está cada proteína (1 si está presente, 0 si no)</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (set_name <span class="cf">in</span> <span class="fu">names</span>(sets)) {</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  df_proteins[[set_name]] <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(all_proteins <span class="sc">%in%</span> sets[[set_name]])</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Mostrar la tabla con kableExtra</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>df_proteins <span class="sc">%&gt;%</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>(<span class="st">"html"</span>, <span class="at">caption =</span> <span class="st">"Proteínas en las Diferentes Comparaciones"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> F, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">bootstrap_options =</span> <span class="fu">c</span>(<span class="st">"striped"</span>, <span class="st">"hover"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-striped table-hover caption-top table-sm small" data-quarto-postprocess="true">
+<caption>Proteínas en las Diferentes Comparaciones</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Protein</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">CDvsControl</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">IBDvsControl</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">UCvsCD</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">UCvsControl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">CCL11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CCL23</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CD6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CSF.1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CXCL1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CXCL10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CXCL11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CXCL9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DNER</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FGF.19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FGF.23</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HGF</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IFN.gamma</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL.17A</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IL10</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MMP.10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PD.L1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TGF.alpha</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TNF</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">VEGFA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="identificación-de-pqtls-asociados-a-las-proteínas-previamente-identificadas" class="level3">
+<h3 class="anchored" data-anchor-id="identificación-de-pqtls-asociados-a-las-proteínas-previamente-identificadas"><strong>2.6. Identificación de pQTLs asociados a las proteínas previamente identificadas:</strong></h3>
+<p>Con base en los niveles de expresión de las proteínas significativas, los individuos se distribuyeron en dos grupos; casos y controles. Aquellos cuya expresión proteica supera el percentil 75 fueron clasificados como casos, mientras que aquellos con niveles por debajo del percentil 50 se consideraron controles.</p>
+<p>Esta clasificación permitio una separación contrastante entre los individuos con diferencias marcadas en la expresión proteica, lo que facilitó la detección de asociaciones genéticas.</p>
+<p>Se usó PLINK 2.0 para evaluar las frecuencias alélicas entre casos y controles, con el objetivo de evaluar la asociación entre cada SNP y los niveles de expresión de&nbsp; cada una de las proteínas. Los niveles de significancia de los SNP evaluados se visualizaron a través de Manhattan plots por cada proteína utilizando el paquete qqman de R (Turner, 2018).</p>
+<p>Un Manhattan plot es una representación gráfica, empleada en estudios de asociación del genoma completo (GWAS), donde se visualizan los valores de significancia estadística (-log10 del valor p) de múltiples SNPs respecto a su posición cromosómica. En este gráfico, cada punto representa un SNP individual, con cromosomas distinguidos mediante etiquetas y colores en el eje x, mientras que en el eje y muestra la magnitud de la asociación estadística. Los SNPs que superan el umbral de significancia establecido aparecen en la parte superior del gráfico.</p>
+<p>Para nuestro análisis, este tipo de gráfico permite identificar las regiones genómicas con variantes significativamente asociadas a la expresión de cada proteína estudiada, facilitando así la detección de loci de rasgos cuantitativos (pQTLs) que modulan los niveles proteicos de interés.</p>
+<p>Adicionalmente se utilizó la información de imputación para evaluar visualmente la significancia de los pQTLs identificados. La visualización se realizó a través del paquete LocusZoom (Heinz et al., 2017).&nbsp;</p>
+<p>Un Locus Plot es un gráfico detallado que permite examinar una región genómica específica asociada a un rasgo de interés. El Locus Plot se enfoca en una región cromosómica limitada donde se ha identificado una señal significativa. Este tipo de visualización proporciona información sobre el grado de desequilibrio de ligamiento (LD) entre el SNP principal y los snps circundantes. El eje X muestra la posición física en el cromosoma , mientras que en el eje y representa la significancia estadística (-log10 del valor p). Adicionalmente, este gráfico incluye la tasa de recombinación local y la ubicación de genes cercanos.</p>
+<p>Los Locus Plots generados permitieron caracterizar la arquitectura genética de las regiones con pQTLs significativos y examinar&nbsp; la relación con genes candidatos que podrían estar influenciando en los niveles de expresión de la proteína asociada con IBD.</p>
+</section>
+<section id="enriquecimiento-funcional" class="level3">
+<h3 class="anchored" data-anchor-id="enriquecimiento-funcional"><strong>2.7. Enriquecimiento Funcional:</strong></h3>
+<p>A través de una búsqueda manual para enriquecer el análisis, se consultaron bases de datos como Ensembl para la anotación de los genes cercanos a los SNPs identificados y el NCBI para determinar las regiones genómicas asociadas, al igual que la función que estas cumplian en la regulacion de la proteina.</p>
+</section>
+</section>
+<section id="resultados" class="level2">
+<h2 class="anchored" data-anchor-id="resultados">3. Resultados:</h2>
+<section id="estructura-de-muestra-en-estudio" class="level3">
+<h3 class="anchored" data-anchor-id="estructura-de-muestra-en-estudio"><strong>3.1. Estructura de muestra en estudio:</strong></h3>
+<p>El número inicial de muestras se presenta en la Figura 1, donde se observa que el x% de las proteinas superaron los controles de calidad establecidos por Olink para los datos de expresion proteica. Las estadisticas relacionadas con la variabilidad intra e interensayo se resumen en la tabla 2.</p>
+<p>Tras la aplicacion de todos los filtros de control de calidad, se detectaron 73 proteinas, las cuales fueron las usadas en analisis posteriores.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Imagenes/Imagen_1.png" class="img-fluid figure-img" alt="corte blab balala"></p>
+<figcaption>Bla blansffsgsf</figcaption>
+</figure>
+</div>
+</section>
+<section id="la-expresión-de-26-proteínas-resultó-estar-asociada-con-ibd" class="level3">
+<h3 class="anchored" data-anchor-id="la-expresión-de-26-proteínas-resultó-estar-asociada-con-ibd"><strong>3.2. La expresión de 26 proteínas resultó estar asociada con IBD:</strong></h3>
+</section>
+<section id="proteínas-asociadas-a-ibd-resultaron-tener-pqtls" class="level3">
+<h3 class="anchored" data-anchor-id="proteínas-asociadas-a-ibd-resultaron-tener-pqtls"><strong>3.3. Proteínas asociadas a IBD resultaron tener pQTLs:</strong></h3>
+</section>
+<section id="inflamación-y-rutas-metabólicas" class="level3">
+<h3 class="anchored" data-anchor-id="inflamación-y-rutas-metabólicas"><strong>3.4. Inflamación y rutas metabólicas:</strong></h3>
+</section>
+</section>
+<section id="discusion" class="level2">
+<h2 class="anchored" data-anchor-id="discusion">4. Discusion:</h2>
+<p><br>
+</p>
+</section>
+<section id="agradecimiento" class="level2">
+<h2 class="anchored" data-anchor-id="agradecimiento"><strong>5. Agradecimiento:</strong></h2>
+<p>Agradezco a los doctores Guillermo Torres y Janina Dose, del Instituto Clínico de Biología Molecular de Kiel, por su orientación y apoyo a lo largo de este estudio. De igual manera extiendo mi gratitud a la profesora Maryam Chaib de Mares, de la Universidad Nacional de Colombia, por su acompañamiento y valiosos aportes.</p>
+</section>
+<section id="reproducibilidad-y-documentacion" class="level2">
+<h2 class="anchored" data-anchor-id="reproducibilidad-y-documentacion"><strong>6. Reproducibilidad y Documentacion:</strong></h2>
+<p>Todo el flujo de análisis se realizó mediante scripts en R versión 4.4.2. Los conjuntos de datos procesados y scripts están disponibles en Github (link).</p>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias"><strong>7. Referencias:</strong></h2>
+<p><br>
+Olink Target 96 — Olink®. (s. f.). Olink®. https://olink.com/products/olink-target-96</p>
+<p><br>
+Colombel JF, Narula N, Peyrin-Biroulet L. Management strategies to improve outcomes of patients with inflammatory bowel diseases. Gastroenterology 2017;152:351–61.e5. de Lange KM, Moutsianas L, Lee JC, et al.&nbsp;Genome-wide association study implicates immune activation of multiple integrin genes in inflammatory bowel disease. Nat Genet 2017;49:256–61</p>
+<p>Liu JZ, van Sommeren S, Huang H, et al.; International Multiple Sclerosis Genetics Consortium; International IBD Genetics Consortium. Association analyses identify 38 susceptibility loci for inflammatory bowel disease and highlight shared genetic risk across populations. Nat Genet 2015;47:979–86 Sun BB, Maranville JC, Peters JE, et al.&nbsp;Genomic atlas of the human plasma proteome. Nature 2018;558:73–9.</p>
+<p>Zhernakova DV, Le TH, Kurilshikov A, et al.; LifeLines cohort study; BIOS consortium. Individual variations in cardiovascular-disease-related protein levels are driven by genetics and gut microbiome. Nat Genet 2018;50:1524–32.</p>
+<p>Bourgonje AR, von Martels JZH, Gabriëls RY, et al.&nbsp;A combined set of four serum inflammatory biomarkers reliably predicts endoscopic disease activity in inflammatory bowel disease. Front Med (Lausanne) 2019;6:251.</p>
+<p>Folkersen L, Gustafsson S, Wang Q, et al.&nbsp;Genomic and drug target evaluation of 90 cardiovascular proteins in 30,931 individuals. Nat Metab 2020;2:1135–48.</p>
+<p>Taliun, D., Harris, D. N., Kessler, M. D., Carlson, J., Szpiech, Z. A., Torres, R., Taliun, S. A. G., Corvelo, A., Gogarten, S. M., Kang, H. M., Pitsillides, A. N., LeFaive, J., Lee, S., Tian, X., Browning, B. L., Das, S., Emde, A., Clarke, W. E., Loesch, D. P., . . . Abecasis, G. R. (2021). Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program. Nature, 590(7845), 290-299. https://doi.org/10.1038/s41586-021-03205-y</p>
+<p>Das, S., Forer, L., Schönherr, S., Sidore, C., Locke, A. E., Kwong, A., Vrieze, S. I., Chew, E. Y., Levy, S., McGue, M., Schlessinger, D., Stambolian, D., Loh, P., Iacono, W. G., Swaroop, A., Scott, L. J., Cucca, F., Kronenberg, F., Boehnke, M., . . . Fuchsberger, C. (2016). Next-generation genotype imputation service and methods. Nature Genetics, 48(10), 1284-1287. https://doi.org/10.1038/ng.3656</p>
+<p>Kässens, J. C., Wienbrandt, L., &amp; Ellinghaus, D. (2021). BIGwas: Single-command quality control and association testing for multi-cohort and biobank-scale GWAS/PheWAS data. GigaScience, 10(6). https://doi.org/10.1093/gigascience/giab047</p>
+<p>Auton, A., Abecasis, G. R., Altshuler, D. M., Durbin, R. M., Abecasis, G. R., Bentley, D. R., Chakravarti, A., Clark, A. G., Donnelly, P., Eichler, E. E., Flicek, P., Gabriel, S. B., Gibbs, R. A., Green, E. D., Hurles, M. E., Knoppers, B. M., Korbel, J. O., Lander, E. S., Lee, C., . . . Abecasis, G. R. (2015). A global reference for human genetic variation. Nature, 526(7571), 68-74. https://doi.org/10.1038/nature15393</p>
+<p>Sherry, S. T. (2001). dbSNP: the NCBI database of genetic variation. Nucleic Acids Research, 29(1), 308-311. https://doi.org/10.1093/nar/29.1.308</p>
+<p>“Ilumina, Inc.”. Infinium Global Screening Array v1.0 (GSA v1.0) User Guide. Illumina, 2017. Link to manual.</p>
+<p>Turner, S. D. (2018). qqman: An R package for visualizing GWAS results using Q-Q and Manhattan plots. Journal of Open Source Software, 3(25), 731. <a href="https://doi.org/10.21105/joss.00731" class="uri">https://doi.org/10.21105/joss.00731</a></p>
+<p>R Core Team. (2024). R: A language and environment for statistical computing. R Foundation for Statistical Computing.<a href="https://www.r-project.org/">https://www.R-project.org/</a></p>
+<p>Heinz, S., Benner, C., Spann, N., Bertolino, E., Lin, Y. C., Laslo, P., Cheng, J. X., Murre, C., Singh, H., &amp; Glass, C. K. (2017). Simple combinations of lineage-determining transcription factors prime cis-regulatory elements required for macrophage and B cell identities. Molecular Cell, 38(4), 576-589. <a href="https://doi.org/10.1016/j.molcel.2017.08.011" class="uri">https://doi.org/10.1016/j.molcel.2017.08.011</a></p>
+<p>Rausch, P., Ratjen, I., Tittmann, L., Enderle, J., Wacker, E. M., Jaeger, K., Ruehlemann, M. C., Ellul, P., Kruse, R., Halfvarsson, J., Roggenbuck, D., Ellinghaus, D., Jacobs, G., Krawczak, M., Schreiber, S., Bang, C., Lieb, W., &amp; Franke, A. (2024). First Insights into microbial changes within an Inflammatory Bowel Disease Family Cohort study. medRxiv (Cold Spring Harbor Laboratory). https://doi.org/10.1101/2024.07.23.24310327</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
