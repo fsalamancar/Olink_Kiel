@@ -16,3 +16,12 @@ I did this project as my Bachelor Thesis
 **Conclusion:** The findings highlight the complexity of genetic regulation in IBD and emphasize the importance of integrating proteogenomic data. The identification of trans-pQTLs opens new opportunities for personalized therapeutic interventions.
 
 **Keywords:** Inflammatory Bowel Disease; Crohn’s Disease; Ulcerative Colitis; pQTLs; Loci; Locus; Linkage Disequilibrium; SNP.
+
+---
+
+## 👤 Author
+
+**Francisco Salamanca**  
+Bioinformatician | MSc in Bioinformatics  
+Universidad Nacinal de Colombia | Institute of Clinical Molecular Biology
+[GitHub](https://github.com/fsalamancar) • [Website](https://fsalamancar.github.io/) • [LinkedIn](https://www.linkedin.com/in/fjosesala/) • [IKMB](https://www.ikmb.uni-kiel.de/people/francisco-salamanca/)
