@@ -23,5 +23,5 @@ I did this project as my Bachelor Thesis
 
 **Francisco Salamanca**  
 Bioinformatician | MSc in Bioinformatics  
-Universidad Nacinal de Colombia | Institute of Clinical Molecular Biology
+Universidad Nacional de Colombia | Institute of Clinical Molecular Biology
 [GitHub](https://github.com/fsalamancar) • [Website](https://fsalamancar.github.io/) • [LinkedIn](https://www.linkedin.com/in/fjosesala/) • [IKMB](https://www.ikmb.uni-kiel.de/people/francisco-salamanca/)
