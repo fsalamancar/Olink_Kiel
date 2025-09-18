@@ -3,7 +3,7 @@
 **Proteomic Biomarkers using Olink with a Kiel Dataset**  
 _Bachelor Thesis Project_
 
-_Prize Winner: 2024 Best Research Thesis - National University of Colombia_
+_Prize Winner: 2024 Biology Best Research Thesis - National University of Colombia_
 
 ---
 
